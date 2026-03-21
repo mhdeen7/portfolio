@@ -1,0 +1,101 @@
+body{
+    background-color: #0f172a;
+    font-family: Arial, sans-serif;
+    color: #e2e8f0;
+}
+.header{
+    text-align: center;
+    color: #e2e8f0;
+}
+.header a{
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.header a:hover{
+    text-decoration: underline;
+}
+.section{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+}
+
+.about{
+    padding: 10px;
+}
+.about h2{
+    color: #e2e8f0;
+}
+.about p{
+    color: #cbd5e1;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+.projects{
+    padding: 10px;
+}
+.projects h2{
+    color: #e2e8f0;
+}
+.projects h3{
+    color: #e2e8f0;
+}
+.projects p{
+    color: #cbd5e1;
+    line-height: 1.6;
+    font-size: 1em;
+}
+.pic{
+    width: 100%;
+    height: auto%;
+    border-radius:1px;
+}
+.pic:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.skills{
+    padding: 20px;
+}
+
+.skills h2{
+    color: #e2e8f0;
+}
+.skills ul{
+    list-style-type: none;
+    padding: 0;
+}
+.skills li{
+    color: #cbd5e1;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.skills li::before{
+    content: "•";
+    color: #3b82f6;
+    margin-right: 10px;
+}
+
+.contact{
+    padding: 20px;
+}
+.contact h2{
+    color: #e2e8f0;
+}
+.contact p{
+    color: #cbd5e1;
+    line-height: 1.6;
+    font-size: 1em;
+}
+.contact p a{
+    color: #3b82f6;
+    text-decoration: none;
+    
+}
+.contact p a:hover{
+    text-decoration: underline;
+}
+
