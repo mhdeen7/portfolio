@@ -1,101 +1,80 @@
 body{
-    background-color: #0f172a;
-    font-family: Arial, sans-serif;
-    color: #e2e8f0;
-}
-.header{
-    text-align: center;
-    color: #e2e8f0;
-}
-.header a{
-    color: #3b82f6;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-.header a:hover{
-    text-decoration: underline;
-}
-.section{
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   gap: 20px;
-}
-
-.about{
-    padding: 10px;
-}
-.about h2{
-    color: #e2e8f0;
-}
-.about p{
-    color: #cbd5e1;
-    line-height: 1.6;
-    font-size: 1em;
-}
-
-.projects{
-    padding: 10px;
-}
-.projects h2{
-    color: #e2e8f0;
-}
-.projects h3{
-    color: #e2e8f0;
-}
-.projects p{
-    color: #cbd5e1;
-    line-height: 1.6;
-    font-size: 1em;
-}
-.pic{
-    width: 100%;
-    height: auto%;
-    border-radius:1px;
-}
-.pic:hover{
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-.skills{
-    padding: 20px;
-}
-
-.skills h2{
-    color: #e2e8f0;
-}
-.skills ul{
-    list-style-type: none;
-    padding: 0;
-}
-.skills li{
-    color: #cbd5e1;
-    margin-bottom: 10px;
-    font-size: 1em;
-}
-
-.skills li::before{
-    content: "•";
-    color: #3b82f6;
-    margin-right: 10px;
-}
-
-.contact{
-    padding: 20px;
-}
-.contact h2{
-    color: #e2e8f0;
-}
-.contact p{
-    color: #cbd5e1;
-    line-height: 1.6;
-    font-size: 1em;
-}
-.contact p a{
-    color: #3b82f6;
-    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color:white;
+    background-color: black;
+    
     
 }
-.contact p a:hover{
-    text-decoration: underline;
+.navbar{
+  color:white;
+  
+  
+}
+.logo{
+  color:orangered;
+  margin: 10px;
+}
+.navbar ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  color: white;
+}
+.navlist li{
+  padding: 0;
+  list-style: none;
+ 
+}
+.navlist a{
+  text-decoration: none;
+  padding: 20px;
+  color: orangered;
+  transition: 0.3s;
+}
+.navlist a:hover{
+    cursor: pointer;
+    color: white;
+}
+.header{
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 10px;
+  text-transform: uppercase;
+  color:white;
+}
+.header:hover{
+  color: orangered;
+}
+.socials{
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transition: 0.3s;
+  margin-top: 10%;
+  color: white;
+}
+.socials a{
+  color: white;
+}
+.socials:hover{
+  cursor: pointer;
+  background-color:orangered;
+  border-radius: 10px;
+  transform: translateY(-5px) scale(1.2);
+}
+.img img{
+  width: 250px;
+  margin: 10px;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.img img:hover{
+  border: 2px solid orangered;
+  border-radius: 12px;
 }
 
