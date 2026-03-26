@@ -11,18 +11,20 @@ body{
 }
 .navbar{
   color:white;
-  
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background: #111;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 .logo{
   color:orangered;
   margin: 10px;
-}
-.navbar ul{
-  display: flex;
-  justify-content: flex-end;
-  align-items: end;
-  color: white;
 }
 .navlist li{
   padding: 0;
@@ -42,12 +44,9 @@ body{
 .header{
   text-align: center;
   font-family:Arial, Helvetica, sans-serif;
-  padding: 10px;
+  padding: 100px;
   text-transform: uppercase;
   color:white;
-}
-.header:hover{
-  color: orangered;
 }
 .socials{
   position: fixed;
