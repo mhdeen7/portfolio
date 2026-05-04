@@ -3,47 +3,299 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
+  <title>Muhidin Osman — Frontend Developer</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
   <nav class="navbar">
     <h2 class="logo">M7</h2>
     <ul class="navlist">
-        <li>
-         <a href="index.html">Home</a>
-         <a href="Contact.html">Contact</a>
-         <a href="Projects">Projects</a>
-         <a href="Skills">Skills</a>
-        </li>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Contact">Contact</a></li>
     </ul>
-
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
   </nav>
-  <section>
-     <header class="header">
-       <h1>Welcome to my Portfolio. <br>
-          and am JUNIOR DEVELOPER
-       </h1>
-     </header>
-  
-    <div class="img">
-       <img src="images/tech.jpg" alt="tech" >
+
+
+  <section id="Home" class="Home">
+    <div class="home-img">
+      <img src="images/pic12.jpeg" alt="Muhidin Osman">
+      <div class="img-glow"></div>
     </div>
 
-    
-   <div class="socials">
-      <a href="https://github.com/mhdeen7"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/muhidin-osman-2530923b9/"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="muhidinyussuf7@gmail.com"><i class="fas fa-envelope"></i></a>
-   </div>
+    <div class="home-Content">
+      <p class="greeting">Hello, I'm</p>
+      <h1>Muhidin<br><span class="accent">Osman</span></h1>
+      <h3>Frontend Developer</h3>
+      <p class="home-desc">
+        I build clean, responsive, and modern websites using HTML, CSS, and JavaScript — turning ideas into polished digital experiences.
+      </p>
+      <div class="home-btn">
+        <a href="#Contact" class="btn btn-primary">Contact Me</a>
+        <a href="#Projects" class="btn btn-outline">View My Work</a>
+      </div>
+    </div>
   </section>
 
+  <!-- ABOUT -->
+  <section id="About" class="about-section">
+    <div class="section-header">
+      <span class="section-tag">Who I Am</span>
+      <h2>About <span class="accent">Me</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a self-driven frontend developer based in Nairobi, Kenya, with a passion for crafting beautiful and functional web experiences. I care deeply about clean code, pixel-perfect design, and making the web more accessible.
+        </p>
+        <p>
+          When I'm not coding, I'm exploring new design trends, tinkering with side projects, and constantly leveling up my skills. I believe great frontend work is where art meets engineering.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Years Coding</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Passion</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-card glass-card">
+        <div class="about-detail"><i class="fa-solid fa-user"></i><span>Muhidin Osman</span></div>
+        <div class="about-detail"><i class="fa-solid fa-location-dot"></i><span>Nairobi, Kenya</span></div>
+        <div class="about-detail"><i class="fa-solid fa-briefcase"></i><span>Open to Work</span></div>
+        <div class="about-detail"><i class="fa-solid fa-code"></i><span>Frontend Developer</span></div>
+        <a href="#" class="btn btn-primary" style="margin-top:20px; display:inline-block; text-align:center;">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </section>
 
-  
-  
+  <!-- SKILLS -->
+  <section id="Skills" class="skills-section">
+    <div class="section-header">
+      <span class="section-tag">What I Know</span>
+      <h2>My <span class="accent">Skills</span></h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card glass-card">
+        <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+        <h3>HTML5</h3>
+        <p>Semantic markup, accessibility, SEO-friendly structure.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        <span class="skill-percent">90%</span>
+      </div>
+
+      <div class="skill-card glass-card">
+        <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+        <h3>CSS3</h3>
+        <p>Flexbox, Grid, animations, responsive design, modern UI.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+        <span class="skill-percent">85%</span>
+      </div>
+
+      <div class="skill-card glass-card">
+        <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+        <h3>JavaScript</h3>
+        <p>DOM manipulation, ES6+, async/await, API integration.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+        <span class="skill-percent">75%</span>
+      </div>
+
+      <div class="skill-card glass-card">
+        <div class="skill-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <h3>Responsive Design</h3>
+        <p>Mobile-first layouts that look great on every device.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+        <span class="skill-percent">88%</span>
+      </div>
+
+      <div class="skill-card glass-card">
+        <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+        <h3>Git & GitHub</h3>
+        <p>Version control, branching, collaboration workflows.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+        <span class="skill-percent">70%</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="Projects" class="projects-section">
+    <div class="section-header">
+      <span class="section-tag">What I've Built</span>
+      <h2>My <span class="accent">Projects</span></h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card glass-card">
+        <div class="project-img">
+          <img src="images/OVEN.png" alt="Oven Project">
+          <div class="project-overlay">
+            <a href="#" class="btn btn-sm"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Oven Landing Page</h3>
+          <p>A modern product landing page built with HTML & CSS. Features smooth animations and a responsive layout.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-img placeholder-img">
+          <div class="placeholder-icon"><i class="fa-solid fa-calculator"></i></div>
+          <div class="project-overlay">
+            <a href="#" class="btn btn-sm"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>JavaScript Calculator</h3>
+          <p>A fully functional calculator built with vanilla JavaScript. Supports keyboard input and operation chaining.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-img placeholder-img">
+          <div class="placeholder-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+          <div class="project-overlay">
+            <a href="#" class="btn btn-sm"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Weather App</h3>
+          <p>A weather app that fetches live data from an API and displays forecasts with clean animated icons.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">API</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-img placeholder-img">
+          <div class="placeholder-icon"><i class="fa-solid fa-list-check"></i></div>
+          <div class="project-overlay">
+            <a href="#" class="btn btn-sm"><i class="fa-solid fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Task Manager</h3>
+          <p>A to-do app with local storage persistence, drag-and-drop reordering, and priority filtering.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="Contact" class="contact-section">
+    <div class="section-header">
+      <span class="section-tag">Let's Talk</span>
+      <h2>Contact <span class="accent">Me</span></h2>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p>I'm open to freelance projects, collaborations, or just a good conversation about the web. Drop me a message!</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+254 715 740 435</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">muhidinyussuf7@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Nairobi, Kenya</span>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/mhdeen7" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/muhidin-osman-15bb993b3/" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-link" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form glass-card" id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="john@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Project Enquiry">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+        <p class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Designed & Built by <span class="accent">Muhidin Osman</span> &copy; 2025</p>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
