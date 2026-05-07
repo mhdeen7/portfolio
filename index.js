@@ -35,15 +35,6 @@
     }, { threshold: 0.15 });
     revealEls.forEach(el => revealObserver.observe(el));
 
-    // Contact form mock submit
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      document.getElementById('formSuccess').style.display = 'block';
-      this.reset();
-      setTimeout(() => {
-        document.getElementById('formSuccess').style.display = 'none';
-      }, 4000);
-    });
 
     // Active nav highlight on scroll
     const sections = document.querySelectorAll('section[id]');
